@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'io.freefair.lombok'
+}
+
+group 'pl.fratik'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':')
+    implementation 'io.netty:netty-all:4.1.67.Final'
+    implementation 'org.jetbrains:annotations:22.0.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'ch.qos.logback:logback-classic:1.2.5'
+    implementation 'org.postgresql:postgresql:42.2.23'
+    implementation 'com.zaxxer:HikariCP:4.0.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}

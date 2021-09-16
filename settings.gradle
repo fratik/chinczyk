@@ -1,0 +1,4 @@
+rootProject.name = 'chinczyk'
+include 'chinczyk-server'
+include 'chinczyk-client'
+
